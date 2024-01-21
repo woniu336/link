@@ -9,7 +9,7 @@ const password = typeof(PASSWORD)!="undefined" ? PASSWORD
     : 'BricRoot'
 // 短链超时，单位毫秒，支持整数乘法，0表示不设置超时，
 const shorten_timeout = typeof(SHORTEN_TIMEOUT)!="undefined" ? SHORTEN_TIMEOUT.split("*").reduce((a,b)=>parseInt(a)*parseInt(b),1)
-    : (0 * 0 * 0)
+    : '0'
 // 默认短链key的长度，遇到重复时会自动延长，
 const default_len = typeof(DEFAULT_LEN)!="undefined" ? parseInt(DEFAULT_LEN)
     : 6
